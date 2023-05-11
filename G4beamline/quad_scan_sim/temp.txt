@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "Simulating quad-scan in G4beamline"
+## loop to run through
+for I in 0.0 -1.2
+do
+    echo "changing current to $I"
+    python change_I.py I
+    echo "running simulation"
+    g4bl G4_M4_Mu2e_03.g4bl
+    # copy data to new directory
+    name = "sample_"
+    name+=$I
+    mkdir name
+    echo "saving data..."
+    for file in MW903.txt MW906.txt MW908.txt MW910.txt MW914.txt MW919.txt MW922.txt MW924.txt MW926.txt MW927.txt MW930.txt MW932.txt
+    do
+        cp $file '$name$file'
+    done
+done
+echo "Completed all runs!"
