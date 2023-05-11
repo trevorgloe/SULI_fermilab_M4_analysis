@@ -14,3 +14,7 @@ The folder diff_emit_run contains files generated from running the simulation wi
 The folder q930_sim contains the data from running the simulation at a different current value at magneti Q930 for testing purposes.
 
 The folder quad_scan_sim contains the data generated from simulating the quad scan process: where a single magnet's current is slowly changed and the distribution of the beam is measured at a certain distance away. This is done automatically using the script [quad_scan_sim](G4beamline/quad_scan_sim/quad_scan_sim.sh), a shell script that is written for a linux operating system. It uses a loop to run the g4beamline simulation repeatedly, changing the current each time using the python script [change_I](G4beamline/quad_scan_sim/change_I.py). The resulting data is then saved into one of the sample_ folders, each named with their respective current value.
+
+Each of the folders starting with three_screen_ contains the data generated in simulating the 3-screen process. Each is named with the magnet at the start of the beamline considered for the 3-screen process.
+
+
