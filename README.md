@@ -17,4 +17,7 @@ The folder quad_scan_sim contains the data generated from simulating the quad sc
 
 Each of the folders starting with three_screen_ contains the data generated in simulating the 3-screen process. Each is named with the magnet at the start of the beamline considered for the 3-screen process.
 
+## Figures and Results
+Histograms for the baseline simulation (all magnets are nominal currents) can be found within G4beamline/baseline/histograms. 
 
+Figures generated for the simulated 3-screen method can be found within G4beamline/three_screen_figures.
