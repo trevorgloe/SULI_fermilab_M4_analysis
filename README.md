@@ -21,3 +21,5 @@ Each of the folders starting with three_screen_ contains the data generated in s
 Histograms for the baseline simulation (all magnets are nominal currents) can be found within G4beamline/baseline/histograms. 
 
 Figures generated for the simulated 3-screen method can be found within G4beamline/three_screen_figures.
+
+Results from all the simulated 3-screen methods can be found in [three_screen_results](G4beamline/three_screen_results.csv), [all_three_screen_sim_results](G4beamline/all_three_screen_sim_results.xlsx). The standard deviations of the distributions for the case of nominal magnet currents is in [allmeanstdg4bl](allmeanstdg4bl.txt). 
